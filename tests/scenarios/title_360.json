@@ -1,0 +1,9 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {"width": 360, "height": 800},
+  "settle_frames": 4,
+  "steps": [
+    {"type": "ui_report", "label": "title-360", "path": "res://evidence/title_360_ui.json", "fail_on": ["any"]},
+    {"type": "screenshot", "path": "res://evidence/title_360.png"}
+  ]
+}

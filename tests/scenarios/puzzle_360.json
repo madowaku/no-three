@@ -1,0 +1,28 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {
+    "width": 360,
+    "height": 800
+  },
+  "settle_frames": 4,
+  "steps": [
+    {
+      "type": "set_property",
+      "node_path": ".",
+      "property": "stage_to_show",
+      "value": 1
+    },
+    {
+      "type": "ui_report",
+      "label": "puzzle-360",
+      "path": "res://evidence/puzzle_360_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/puzzle_360.png"
+    }
+  ]
+}

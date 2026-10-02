@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="VisualPalette" format=3]
+[ext_resource type="Script" path="res://scripts/visual_palette.gd" id="1"]
+[resource]
+script = ExtResource("1")
+background = Color(0.961, 0.953, 0.929, 1)
+ink = Color(0.125, 0.153, 0.137, 1)
+muted = Color(0.43, 0.46, 0.43, 1)
+grid = Color(0.72, 0.73, 0.69, 1)
+trace = Color(0.38, 0.46, 0.40, 0.38)
+reject = Color(0.737, 0.314, 0.227, 1)

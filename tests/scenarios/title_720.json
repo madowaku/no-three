@@ -1,0 +1,9 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {"width": 720, "height": 1280},
+  "settle_frames": 4,
+  "steps": [
+    {"type": "ui_report", "label": "title-720", "path": "res://evidence/title_720_ui.json", "fail_on": ["any"]},
+    {"type": "screenshot", "path": "res://evidence/title_720.png"}
+  ]
+}

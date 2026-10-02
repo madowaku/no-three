@@ -1,0 +1,301 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {
+    "width": 720,
+    "height": 1280
+  },
+  "settle_frames": 4,
+  "steps": [
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1029
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1029
+      },
+      "pressed": false
+    },
+    {
+      "type": "ui_report",
+      "label": "stages-720",
+      "path": "res://evidence/stages_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/stages_720.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 122,
+        "y": 301
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 122,
+        "y": 301
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "ScreenHost/PuzzleScreen"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1046
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1046
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/trace_720.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 606,
+        "y": 353
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 606,
+        "y": 353
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "5 / 6"
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/reject_720.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 606,
+        "y": 845
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 606,
+        "y": 845
+      },
+      "pressed": false
+    },
+    {
+      "type": "wait_until",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/FooterSlot/ClearOverlay",
+      "property": "visible",
+      "expected": true
+    },
+    {
+      "type": "wait_seconds",
+      "seconds": 0.3
+    },
+    {
+      "type": "ui_report",
+      "label": "clear-720",
+      "path": "res://evidence/clear_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/clear_720.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1102
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1102
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Header/StageNumber",
+      "property": "text",
+      "expected": "002"
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 114,
+        "y": 845
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 114,
+        "y": 845
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "5 / 6"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 200,
+        "y": 1129
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 200,
+        "y": 1129
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "4 / 6"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 500,
+        "y": 1129
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 500,
+        "y": 1129
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1212
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 360,
+        "y": 1212
+      },
+      "pressed": false
+    },
+    {
+      "type": "ui_report",
+      "label": "unlocked-720",
+      "path": "res://evidence/unlocked_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/StageSelect/Frame/Column/Chapters/Chapter1/Stages/Stage002",
+      "property": "disabled",
+      "expected": false
+    }
+  ]
+}

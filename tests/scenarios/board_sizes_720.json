@@ -1,0 +1,64 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {
+    "width": 720,
+    "height": 1280
+  },
+  "settle_frames": 4,
+  "steps": [
+    {
+      "type": "set_property",
+      "node_path": ".",
+      "property": "stage_to_show",
+      "value": 5
+    },
+    {
+      "type": "ui_report",
+      "label": "stage-005-720",
+      "path": "res://evidence/stage_005_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/stage_005_720.png"
+    },
+    {
+      "type": "set_property",
+      "node_path": ".",
+      "property": "stage_to_show",
+      "value": 9
+    },
+    {
+      "type": "ui_report",
+      "label": "stage-009-720",
+      "path": "res://evidence/stage_009_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/stage_009_720.png"
+    },
+    {
+      "type": "set_property",
+      "node_path": ".",
+      "property": "stage_to_show",
+      "value": 20
+    },
+    {
+      "type": "ui_report",
+      "label": "stage-020-720",
+      "path": "res://evidence/stage_020_720_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/stage_020_720.png"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+[gd_resource type="Theme" format=3]
+
+[sub_resource type="StyleBoxFlat" id="normal"]
+bg_color = Color(0.961, 0.953, 0.929, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72, 0.73, 0.69, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="hover"]
+bg_color = Color(0.90, 0.91, 0.87, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.43, 0.46, 0.43, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="pressed"]
+bg_color = Color(0.125, 0.153, 0.137, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="disabled"]
+bg_color = Color(0.961, 0.953, 0.929, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84, 0.84, 0.80, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="focus"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.737, 0.314, 0.227, 1)
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="compact_normal"]
+bg_color = Color(0.961, 0.953, 0.929, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72, 0.73, 0.69, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="compact_pressed"]
+bg_color = Color(0.125, 0.153, 0.137, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="compact_hover"]
+bg_color = Color(0.90, 0.91, 0.87, 1)
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[resource]
+default_font_size = 28
+Button/colors/font_color = Color(0.125, 0.153, 0.137, 1)
+Button/colors/font_hover_color = Color(0.125, 0.153, 0.137, 1)
+Button/colors/font_pressed_color = Color(0.961, 0.953, 0.929, 1)
+Button/colors/font_focus_color = Color(0.125, 0.153, 0.137, 1)
+Button/colors/font_disabled_color = Color(0.72, 0.73, 0.69, 1)
+Button/styles/normal = SubResource("normal")
+Button/styles/hover = SubResource("hover")
+Button/styles/pressed = SubResource("pressed")
+Button/styles/disabled = SubResource("disabled")
+Button/styles/focus = SubResource("focus")
+Label/colors/font_color = Color(0.125, 0.153, 0.137, 1)
+VBoxContainer/constants/separation = 16
+HBoxContainer/constants/separation = 16
+TitleLabel/base_type = &"Label"
+TitleLabel/font_sizes/font_size = 126
+HeadingLabel/base_type = &"Label"
+HeadingLabel/font_sizes/font_size = 48
+CounterLabel/base_type = &"Label"
+CounterLabel/font_sizes/font_size = 44
+CaptionLabel/base_type = &"Label"
+CaptionLabel/font_sizes/font_size = 22
+CaptionLabel/colors/font_color = Color(0.43, 0.46, 0.43, 1)
+PrimaryButton/base_type = &"Button"
+PrimaryButton/styles/normal = SubResource("pressed")
+PrimaryButton/styles/hover = SubResource("pressed")
+PrimaryButton/colors/font_color = Color(0.961, 0.953, 0.929, 1)
+PrimaryButton/colors/font_hover_color = Color(0.961, 0.953, 0.929, 1)
+PrimaryButton/colors/font_focus_color = Color(0.961, 0.953, 0.929, 1)
+CompleteLabel/base_type = &"Label"
+CompleteLabel/font_sizes/font_size = 32
+CompactButton/base_type = &"Button"
+CompactButton/font_sizes/font_size = 22
+CompactButton/styles/normal = SubResource("compact_normal")
+CompactButton/styles/hover = SubResource("compact_hover")
+CompactButton/styles/pressed = SubResource("compact_pressed")
+CompactPrimaryButton/base_type = &"CompactButton"
+CompactPrimaryButton/styles/normal = SubResource("compact_pressed")
+CompactPrimaryButton/styles/hover = SubResource("compact_pressed")
+CompactPrimaryButton/colors/font_color = Color(0.961, 0.953, 0.929, 1)
+CompactPrimaryButton/colors/font_hover_color = Color(0.961, 0.953, 0.929, 1)
+CompactPrimaryButton/colors/font_focus_color = Color(0.961, 0.953, 0.929, 1)

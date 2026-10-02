@@ -1,0 +1,301 @@
+{
+  "scene_path": "tests/ui_harness.tscn",
+  "viewport_size": {
+    "width": 360,
+    "height": 800
+  },
+  "settle_frames": 4,
+  "steps": [
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 674.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 674.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "ui_report",
+      "label": "stages-360",
+      "path": "res://evidence/stages_360_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/stages_360.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 61.0,
+        "y": 150.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 61.0,
+        "y": 150.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "ScreenHost/PuzzleScreen"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 683.0
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 683.0
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/trace_360.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 303.0,
+        "y": 256.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 303.0,
+        "y": 256.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "5 / 6"
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/reject_360.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 303.0,
+        "y": 502.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 303.0,
+        "y": 502.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "wait_until",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/FooterSlot/ClearOverlay",
+      "property": "visible",
+      "expected": true
+    },
+    {
+      "type": "wait_seconds",
+      "seconds": 0.3
+    },
+    {
+      "type": "ui_report",
+      "label": "clear-360",
+      "path": "res://evidence/clear_360_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "screenshot",
+      "path": "res://evidence/clear_360.png"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 711.0
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 711.0
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Header/StageNumber",
+      "property": "text",
+      "expected": "002"
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 57.0,
+        "y": 502.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 57.0,
+        "y": 502.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "5 / 6"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 100.0,
+        "y": 724.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 100.0,
+        "y": 724.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen/Frame/Column/Counter",
+      "property": "text",
+      "expected": "4 / 6"
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 250.0,
+        "y": 724.5
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 250.0,
+        "y": 724.5
+      },
+      "pressed": false
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/PuzzleScreen",
+      "property": "trace_enabled",
+      "expected": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 766.0
+      },
+      "pressed": true
+    },
+    {
+      "type": "mouse_button",
+      "button_index": 1,
+      "position": {
+        "x": 180.0,
+        "y": 766.0
+      },
+      "pressed": false
+    },
+    {
+      "type": "ui_report",
+      "label": "unlocked-360",
+      "path": "res://evidence/unlocked_360_ui.json",
+      "fail_on": [
+        "any"
+      ]
+    },
+    {
+      "type": "assert",
+      "assertion": "property",
+      "node_path": "ScreenHost/StageSelect/Frame/Column/Chapters/Chapter1/Stages/Stage002",
+      "property": "disabled",
+      "expected": false
+    }
+  ]
+}
